@@ -46,4 +46,4 @@ Notificações e lembretes automáticos (consultas, exames, receitas)
 
 Conformidade com a LGPD, ANS e CFM
 
-Arquitetura multi-clínica no modelo micro SaaS, permitindo personalização e escalabilidade# Zenith
+Arquitetura multi-clínica no modelo micro SaaS, permitindo personalização e escalabilidade
