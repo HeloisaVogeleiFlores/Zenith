@@ -1,0 +1,70 @@
+/* Estilo Global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5; /* Cor neutra de fundo */
+    color: #333; /* Texto em tom suave */
+}
+
+/* Navbar */
+#navbar {
+    background-color: #003366; /* Tom de azul escuro */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #3399ff; /* Azul claro no hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #3399ff; /* Azul vibrante */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #cce7ff; /* Azul bem claro ao passar o mouse */
+}
+
+/* Adicionais para Botões (se aplicável) */
+button {
+    background-color: #3399ff; /* Cor de fundo azul */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007acc; /* Azul mais escuro no hover */
+}

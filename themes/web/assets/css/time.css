@@ -1,0 +1,92 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  /* HEADER IGUAL AO DA HOME */
+  header {
+    background-color: #ffffff;
+    color: #1e88e5;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+  nav {
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #1e88e5;
+    color: white;
+  }
+  
+  /* HORÁRIOS */
+  .horarios {
+    padding: 60px 40px;
+  }
+  
+  .horarios h2 {
+    font-size: 32px;
+    color: #1e88e5;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1e88e5;
+    display: inline-block;
+  }
+  
+  /* TABELA */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  thead {
+    background-color: #1e88e5;
+    color: white;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f9ff;
+  }
+  
+  td {
+    color: #555;
+  }
+  

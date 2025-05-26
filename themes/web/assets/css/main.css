@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f9fc;
+    color: #333;
+  }
+  
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e88e5;
+  }
+  
+  .nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav a.active,
+  .nav a:hover {
+    color: #1e88e5;
+    border-bottom: 2px solid #1e88e5;
+  }
+  
+  .hero {
+    background: url('https://jornal.usp.br/wp-content/uploads/2024/04/20240411_medicos_per_capita.jpg') no-repeat center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 123, 255, 0.4);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;
+  }
+  
+  .help-online {
+    color: white;
+    text-align: right;
+    max-width: 300px;
+  }
+  
+  .help-online h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .help-online span {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #1e88e5;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e3f2fd;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .service-box {
+    flex: 1;
+    max-width: 220px;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .service-box .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #1e88e5;
+  }
+  
+  .service-box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-box p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+  }
+  
+  .info-box {
+    flex: 1;
+    max-width: 400px;
+    background-color: #f1f8ff;
+    padding: 20px;
+    margin: 10px;
+    border-left: 5px solid #1e88e5;
+  }
+  
+  .info-box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1e88e5;
+  }
+  
+  .info-box p {
+    font-size: 14px;
+  }
+  

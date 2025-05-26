@@ -1,0 +1,108 @@
+/* RESET E BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f2f4f8;
+    color: #333;
+  }
+  
+/* HEADER IGUAL AO DA HOME */
+header {
+  background-color: #ffffff;
+  color: #1e88e5;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #1e88e5;
+  color: white;
+}
+
+  
+  /* ESPECIALISTAS */
+  .especialistas {
+    padding: 60px 40px;
+  }
+  
+  .especialistas h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #1e88e5;
+    border-bottom: 2px solid #1e88e5;
+    display: inline-block;
+  }
+  
+  /* CARTÕES DE MÉDICOS */
+  .medicos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .medico {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .medico img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .medico h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .medico p {
+    font-size: 14px;
+    margin: 4px 0;
+    color: #555;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .medicos-lista {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
