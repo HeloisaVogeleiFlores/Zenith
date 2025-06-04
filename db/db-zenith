@@ -1,0 +1,48 @@
+CREATE DATABASE ClinicaZenith;
+USE ClinicaZenith;
+
+-- Tabela da clínica
+CREATE TABLE Clinica (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    endereco VARCHAR(255) NOT NULL,
+    cidade VARCHAR(100),
+    estado VARCHAR(50),
+    cep VARCHAR(10)
+);
+
+-- Contato da clínica
+CREATE TABLE ContatoClinica (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    clinica_id INT,
+    tipo ENUM('telefone', 'email', 'whatsapp', 'outro') NOT NULL,
+    valor VARCHAR(100) NOT NULL,
+    FOREIGN KEY (clinica_id) REFERENCES Clinica(id) ON DELETE CASCADE
+);
+
+-- Especialidades (psicologia, fisioterapia, etc.)
+CREATE TABLE Especialidade (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+-- Profissionais
+CREATE TABLE Profissional (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(14) UNIQUE NOT NULL,
+    registro_profissional VARCHAR(50), -- CRM, CRP, CREFITO, etc.
+    especialidade_id INT,
+    clinica_id INT,
+    FOREIGN KEY (especialidade_id) REFERENCES Especialidade(id),
+    FOREIGN KEY (clinica_id) REFERENCES Clinica(id)
+);
+
+-- Contato dos profissionais
+CREATE TABLE ContatoProfissional (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    profissional_id INT,
+    tipo ENUM('telefone', 'email', 'whatsapp', 'outro') NOT NULL,
+    valor VARCHAR(100) NOT NULL,
+    FOREIGN KEY (profissional_id) REFERENCES Profissional(id) ON DELETE CASCADE
+);
